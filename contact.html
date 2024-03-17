@@ -4,42 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Raffaella Samanta Caiulo - Sviluppatrice junior appassionata nel trasformare le idee in interfacce accattivanti e reattive, con solide competenze in HTML e CSS.">
-    <meta name="keywords" content="Raffaella Samanta Caiulo, sviluppatrice, HTML, CSS, interfacce">
+    <meta name="description"
+        content="Raffaella Samanta Caiulo - Sviluppatrice junior appassionata nel trasformare le idee in interfacce web accattivanti e reattive.">
+    <meta name="keywords" content="Raffaella Samanta Caiulo, sviluppatrice, HTML, CSS, interfacce web, GIT, SEO, Bootstrap, Skills">
     <meta name="author" content="Raffaella Samanta Caiulo">
 
     <meta property="og:title" content="Raffaella Samanta Caiulo | Home">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rsamantac.github.io">
-    <meta property="og:description" content="Raffaella Samanta Caiulo - Sviluppatrice junior appassionata nel trasformare le idee in interfacce accattivanti e reattive, con solide competenze in HTML e CSS.">
-    <meta property="og:image" content="/immagini/developer.png">
+    <meta property="og:description"
+        content="Raffaella Samanta Caiulo - Sviluppatrice junior appassionata nel trasformare le idee in interfacce web accattivanti e reattive.">
+    <meta property="og:image" content="https://rsamantac.github.io/Portfolio/immagini/developer.png">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-        emailjs.init("_Nl7Gr2RdmOF0UhNf");  
-
-        document.addEventListener('DOMContentLoaded', function () {
-            var form = document.querySelector('form');
-
-            form.addEventListener('submit', function (event) {
-                event.preventDefault();
-
-                var formData = new FormData(form);
-
-                emailjs.send("service_rkoxioa", "template_tkt6txn", formData)
-                    .then(function (response) {
-                        console.log('Email inviata con successo:', response);
-                        alert('Messaggio inviato correttamente, ti contatterò al più presto!');
-                    }, function (error) {
-                        console.log('Errore durante l\'invio dell\'email:', error);
-                        alert('Errore durante l\'invio del messaggio. Riprova più tardi.');
-                    });
-            });
-        });
-    </script>
-
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Raffaella Samanta Caiulo | Contattami</title>
 </head>
 
@@ -56,23 +35,22 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
-                    <a class="nav-link active" aria-current="page" href="chi-sono.html">Chi sono</a>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="me.html">Chi sono</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="progetti.html">Progetti</a>
+                        <a class="nav-link active" aria-current="page" href="projects.html">Progetti</a>
                     </li>
                 </ul>
                 <div class="d-flex">
                     <a href="https://github.com/rsamantac" target="_blank" rel="noopener">
-                        <img src="immagini/github.png" width="25" height="25" style="margin-right: 10px;"
-                            alt="github" />
+                        <img src="/assets/images/github.png" class="logo" width="25" height="25" alt="github" />
                     </a>
                     <a href="https://www.linkedin.com" target="_blank" rel="noopener">
-                        <img src="immagini/linkedin.png" width="25" height="25" style="margin-right: 10px;"
-                            alt="linkedin" />
+                        <img src="/assets/images/linkedin.png" class="logo" width="25" height="25" alt="linkedin" />
                     </a>
                     <a href="https://www.instagram.com" target="_blank" rel="noopener">
-                        <img src="immagini/instagram.png" width="25" height="25" alt="instagram" />
+                        <img src="assets/images/instagram.png" class="logo" width="25" height="25" alt="instagram" />
                     </a>
                 </div>
             </div>
@@ -87,8 +65,8 @@
                     <p>Se hai bisogno di contattarmi, compila il seguente form:</p>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-xs-12">
-                <div class="centrato text-center">
+            <div class="col-lg-6 col-md-6 col-xs-12 custom-form-container">
+                <div class="custom-center">
                     <form>
                         <div class="form-group">
                             <label for="name">Nome:</label>
@@ -107,7 +85,7 @@
                             <textarea type="text" class="form-control" id="Messaggio" name="Messaggio"
                                 required></textarea>
                         </div>
-                        </br>
+                        <br />
                         <button type="submit" class="btn btn-primary">Invia</button>
                     </form>
                 </div>
@@ -115,7 +93,7 @@
         </div>
     </div>
 
-    <footer id="bottom" class="row text-center py-3 shadow-lg fixed-bottom" style="margin-top:30px;">
+    <footer id="bottom" class="row text-center py-3 shadow-lg fixed-bottom">
         <div class="col-12">
             Copyright &copy; 2024 Raffaella Samanta Caiulo
         </div>
@@ -125,6 +103,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script>
+            emailjs.init("_Nl7Gr2RdmOF0UhNf");
+    
+            document.addEventListener('DOMContentLoaded', function () {
+                var form = document.querySelector('form');
+    
+                form.addEventListener('submit', function (event) {
+                    event.preventDefault();
+    
+                    var formData = new FormData(form);
+    
+                    emailjs.send("service_rkoxioa", "template_tkt6txn", formData)
+                        .then(function (response) {
+                            console.log('Email inviata con successo:', response);
+                            alert('Messaggio inviato correttamente, ti contatterò al più presto!');
+                        }, function (error) {
+                            console.log('Errore durante l\'invio dell\'email:', error);
+                            alert('Errore durante l\'invio del messaggio. Riprova più tardi.');
+                        });
+                });
+            });
+        </script>
 </body>
 
 </html>
